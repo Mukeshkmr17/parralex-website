@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto;  
+    perspective: 10px;
+}
+.container{
+     position:relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height:100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+}
+.background{
+     transform:translateZ(-40px)scale(5);
+    
+
+    
+}
+.foreground{
+     transform:translateZ(-20px)scale(3);
+}
+.background,.foreground{
+     position:absolute; 
+    
+      width: 100%;
+     height: 100%;
+    z-index:-1;
+    object-fit: cover;
+    
+
+    
+}
+.text{
+
+    position:relative;
+    min-height: 300px;
+
+}
+
+#jk{
+     
+ position: absolute; 
+/* align-self:center; */
+transform:translateX(410px) translateY(120px);
+background-color:white;
+border-radius: 5px;
+color:rgb(13, 185, 44);
+  padding:10px 30px 10px 30px;
+ /* width:18%;
+ text-align: center; */
+    
+}
+.image{
+    background-image:url("https://cdn.discordapp.com/attachments/1043089742780182603/1064231703071178914/biking.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+    width:100%;
+   
+
+}
+.image1{
+    background-image:url("https://cdn.discordapp.com/attachments/1043089742780182603/1064231703809376327/pgliding.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+    width:100%;
+}
+.image2{
+    background-image:url("https://cdn.discordapp.com/attachments/1043089742780182603/1064231704363016282/surfing.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+    width:100%;
+}
+
+.t{
+    background-color: rgb(17, 15, 15);
+    color:aliceblue;
+    padding:50px;
+    
+}
+h2{
+    font-size: 50px;
+    padding-bottom:15px;
+}
+#head{
+    font-size:60px;
+    color:aliceblue;
+    text-shadow: 2px 2px;
+    padding-bottom:200px;
+}
+   
+
